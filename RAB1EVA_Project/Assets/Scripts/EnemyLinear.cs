@@ -38,7 +38,7 @@ public class EnemyLinear : MonoBehaviour
             waitTimer = waitAtPoints;
 
             goingToPointB = !goingToPointB;
-            targetPosition = targetPosition == pointA.position ? pointB.position : pointA.position;
+            targetPosition = goingToPointB ? pointB.position : pointA.position;
         }
 
         Debug.Log($"Enemy position: {transform.position}, Target position: {targetPosition}, Going to Point B: {goingToPointB}");
