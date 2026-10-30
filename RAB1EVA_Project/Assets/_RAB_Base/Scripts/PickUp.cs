@@ -19,4 +19,16 @@ public class PickUp : MonoBehaviour
         transform.Rotate(Vector3.up * speedY * Time.deltaTime);
         transform.Rotate(Vector3.forward * speedZ * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+           
+        }
+    }
+
+
+
+
 }
