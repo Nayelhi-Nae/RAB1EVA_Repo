@@ -890,7 +890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &870795115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1207,7 +1207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1291149586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1695,6 +1695,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062df8fa0ae8d1045b7dee1e9c19e040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
+  mainMenuScene: 0
+  firstLevelScene: 0
+  levelClearedScene: 0
+  victoryScene: 0
+  lastLevelScene: 0
 --- !u!4 &1474876637
 Transform:
   m_ObjectHideFlags: 0
