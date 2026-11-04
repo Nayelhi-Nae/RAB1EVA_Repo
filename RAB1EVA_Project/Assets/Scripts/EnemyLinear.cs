@@ -41,6 +41,6 @@ public class EnemyLinear : MonoBehaviour
             targetPosition = goingToPointB ? pointB.position : pointA.position;
         }
 
-        Debug.Log($"Enemy position: {transform.position}, Target position: {targetPosition}, Going to Point B: {goingToPointB}");
+        
     }
 }

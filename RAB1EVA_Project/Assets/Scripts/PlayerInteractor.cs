@@ -6,6 +6,7 @@ using System;
 public class PlayerInteractor : MonoBehaviour
 {
     public static event Action<int, int> OnPointsChanged;
+    public static PlayerInteractor Instance;
 
     [Header("Respawn Configuration")]
     public Transform respawnPoint; //Ref al punto de respawn para usar su posición
