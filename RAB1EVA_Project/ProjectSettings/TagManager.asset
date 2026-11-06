@@ -7,9 +7,13 @@ TagManager:
   - Obstacle
   - PickUp
   - Ground
+<<<<<<< Updated upstream
   - Switch
   - CheckPoint
   - RespawnFall
+=======
+  - Enemy
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
