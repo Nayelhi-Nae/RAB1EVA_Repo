@@ -32,7 +32,7 @@ public class FallingPlatform : MonoBehaviour
     {
         isFalling = true;
 
-        // Opcional: Aquí puedes añadir efectos visuales o de sacudida (shake) antes de caer
+        //  Aquí puedes añadir efectos visuales o de sacudida (shake) antes de caer
 
         // Espera el tiempo configurado
         yield return new WaitForSeconds(fallDelay);
