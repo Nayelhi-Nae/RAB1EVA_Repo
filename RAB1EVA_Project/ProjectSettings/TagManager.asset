@@ -10,6 +10,10 @@ TagManager:
   - Switch
   - CheckPoint
   - RespawnFall
+  - HellPilar
+  - EmergingHellPilar
+  - HellSoul
+  - RespawnWalls
   layers:
   - Default
   - TransparentFX
