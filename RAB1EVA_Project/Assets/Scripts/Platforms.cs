@@ -1,48 +1,49 @@
-using UnityEngine;
 using System.Collections;
-using Unity.VisualScripting;
-using System;
+using UnityEngine;
 
-
-public class Platforms : MonoBehaviour
+public class FallingPlatform : MonoBehaviour
 {
-    [Header("Configuracion de caida")]
-    public float fallDalay = 1.0f; //Tiempo que tarda en caer 
-    public float destroyDelay = 2.0f; // Tiempo que tarda en destruirse despues de caer
+    [Header("Configuración de caída")]
+    [Tooltip("Tiempo de espera en segundos antes de que la plataforma empiece a caer.")]
+    public float fallDelay = 1.0f;
+
+    [Tooltip("Tiempo que tarda la plataforma en destruirse tras empezar a caer (opcional).")]
+    public float destroyDelay = 3.0f;
 
     private Rigidbody rb;
-    private bool IsFalling =  false;
+    private bool isFalling = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        // que la plataforma no tenga selecionado la gravedad para que no caiga
-        rb.isKinematic = true;
     }
 
+    // Detecta cuando el jugador colisiona con la plataforma
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !IsFalling) 
+        // Comprobamos si el objeto que chocó tiene la etiqueta "Player"
+        if (collision.gameObject.CompareTag("Player") && !isFalling)
         {
-            StartCoroutine(FallRoutine);
+            StartCoroutine(FallRoutine());
         }
     }
 
-    private void StartCoroutine(Func<IEnumerable> fallRoutine)
+    IEnumerator FallRoutine()
     {
-        throw new NotImplementedException();
+        isFalling = true;
+
+        // Opcional: Aquí puedes añadir efectos visuales o de sacudida (shake) antes de caer
+
+        // Espera el tiempo configurado
+        yield return new WaitForSeconds(fallDelay);
+
+        // Activamos las físicas de caída
+        rb.isKinematic = false; // Permite que las físicas actúen sobre el objeto
+        rb.useGravity = true;   // Hace que la gravedad tire de la plataforma hacia abajo
+
+        // Opcional: Destruir la plataforma después de un tiempo para limpiar la escena
+        Destroy(gameObject, destroyDelay);
     }
-
-    IEnumerable FallRoutine()
-    {
-        IsFalling = true;
-        Debug.Log("La plataforma va a caer");
-
-        yield return new WaitForSeconds(fallDalay);
-
-        rb.isKinematic = false;
-
-    }
-
 }
+
+
