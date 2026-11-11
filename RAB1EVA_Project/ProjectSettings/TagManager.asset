@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - RespawnWalls
+  - Obstacle
+  - CheckPoint
+  - RespawnFall
+  - Switch
+  - Ground
+  - EmergingHellPilar
+  - PickUp
+  - HellSoul
   layers:
   - Default
   - TransparentFX
