@@ -13,6 +13,7 @@ TagManager:
   - EmergingHellPilar
   - PickUp
   - HellSoul
+  - HellTunnel
   layers:
   - Default
   - TransparentFX
