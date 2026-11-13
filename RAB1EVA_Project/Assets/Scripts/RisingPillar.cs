@@ -1,36 +1,35 @@
 using UnityEngine;
 using System.Collections;
+using Unity.Cinemachine;
 
 public class RisingPillar : MonoBehaviour
 {
-   [Header("Movement Settings")]
-    [Tooltip("How high the pillar will rise.")]
-    public float riseHeight = 5f;
-    [Tooltip("Speed at which the pillar rises.")]
-    public float moveSpeed = 3f;
+ [Header("Movement Settings")]
+    public float riseHeight = 90f;
+    public float moveSpeed = 10f;
 
-    [Header("Camera Shake Settings")]
-    [Tooltip("Drag the 'CameraShakeHolder' parent object here.")]
-    public Transform cameraShakeHolder;
-    [Tooltip("Intensity of the shake. Try values between 0.05 and 0.2.")]
-    public float shakeMagnitude = 0.08f;
+    [Header("Cinemachine Shake Settings")]
+    [Tooltip("Drag your PlayerCam here.")]
+    public CinemachineCamera cinemachineCamera;
+    public float shakeAmplitude = 2f;
+    public float shakeFrequency = 2f;
 
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private bool isRising = false;
     private bool hasRisen = false;
-    
-    private Coroutine shakeCoroutine;
-    private Vector3 originalLocalPos;
+
+    private CinemachineBasicMultiChannelPerlin noiseComponent;
 
     void Start()
     {
         startPosition = transform.position;
         targetPosition = startPosition + new Vector3(0f, riseHeight, 0f);
 
-        if (cameraShakeHolder != null)
+        if (cinemachineCamera != null)
         {
-            originalLocalPos = cameraShakeHolder.localPosition;
+            noiseComponent = cinemachineCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
+            SetShakeActive(false);
         }
     }
 
@@ -45,7 +44,7 @@ public class RisingPillar : MonoBehaviour
                 transform.position = targetPosition;
                 hasRisen = true;
                 isRising = false;
-                StopShake();
+                SetShakeActive(false);
             }
         }
     }
@@ -55,42 +54,16 @@ public class RisingPillar : MonoBehaviour
         if (!hasRisen)
         {
             isRising = true;
-
-            if (cameraShakeHolder != null && shakeCoroutine == null)
-            {
-                shakeCoroutine = StartCoroutine(ShakeRoutine());
-            }
+            SetShakeActive(true);
         }
     }
 
-    IEnumerator ShakeRoutine()
+    void SetShakeActive(bool active)
     {
-        while (isRising)
+        if (noiseComponent != null)
         {
-            // Generate random X and Y offsets for the shake
-            float offsetX = Random.Range(-1f, 1f) * shakeMagnitude;
-            float offsetY = Random.Range(-1f, 1f) * shakeMagnitude;
-
-            cameraShakeHolder.localPosition = originalLocalPos + new Vector3(offsetX, offsetY, 0f);
-
-            yield return null;
-        }
-
-        // Reset position when finished rising
-        cameraShakeHolder.localPosition = originalLocalPos;
-        shakeCoroutine = null;
-    }
-
-    void StopShake()
-    {
-        if (shakeCoroutine != null)
-        {
-            StopCoroutine(shakeCoroutine);
-            shakeCoroutine = null;
-            if (cameraShakeHolder != null)
-            {
-                cameraShakeHolder.localPosition = originalLocalPos;
-            }
+            noiseComponent.AmplitudeGain = active ? shakeAmplitude : 0f;
+            noiseComponent.FrequencyGain = active ? shakeFrequency : 0f;
         }
     }
 }
