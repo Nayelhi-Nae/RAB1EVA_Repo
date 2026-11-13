@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour
         {
             groundCheck = true; //Al chocar con el suelo se devuelve la posibilidad de saltar
         }
+        if (collision.gameObject.CompareTag("EmergingHellPilar"))
+        {
+            groundCheck = true;
+        }
     }
 
     void CinematicMove()
