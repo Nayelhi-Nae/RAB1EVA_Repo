@@ -158,8 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a6a77e52756425eb1745f5b08d6ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RisingPillar
-  riseHeight: 40
-  moveSpeed: 20
+  riseHeight: 80
+  moveSpeed: 15
+  cameraShakeHolder: {fileID: 330585546}
+  shakeMagnitude: 9
 --- !u!1 &142987249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1613,7 @@ GameObject:
   - component: {fileID: 1852057041}
   - component: {fileID: 1852057040}
   - component: {fileID: 1852057039}
-  - component: {fileID: 1852057038}
+  - component: {fileID: 1852057044}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1619,20 +1621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1852057038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852057037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817598a77db6b4d42928df4355e504f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PillarSwitch
-  targetPillar: {fileID: 102475681}
-  singleUse: 1
 --- !u!65 &1852057039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1726,6 +1714,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1852057044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852057037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817598a77db6b4d42928df4355e504f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PillarSwitch
+  targetPillar: {fileID: 102475681}
+  singleUse: 1
 --- !u!1 &1891769238
 GameObject:
   m_ObjectHideFlags: 0
