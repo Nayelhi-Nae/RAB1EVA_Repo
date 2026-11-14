@@ -232,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &142987250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -983,59 +983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CylinderRotation
   rotateAmount: {x: 0, y: 0, z: 7}
---- !u!1 &850529150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 850529152}
-  - component: {fileID: 850529151}
-  m_Layer: 0
-  m_Name: CheckPoint_01
-  m_TagString: CheckPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &850529151
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850529150}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &850529152
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850529150}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.3, y: -12, z: 49.6}
-  m_LocalScale: {x: 5.79628, y: 5.79628, z: 5.79628}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949251899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,7 +2381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c732a61b9e00f438e53b0b92758a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCheckpoint
-  checkPoint: {fileID: 850529150}
+  checkPoint: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2454,7 +2401,6 @@ SceneRoots:
   - {fileID: 248826487}
   - {fileID: 2062004567}
   - {fileID: 949251903}
-  - {fileID: 850529152}
   - {fileID: 1082307641}
   - {fileID: 1289434134}
   - {fileID: 1852057042}
