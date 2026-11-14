@@ -9,10 +9,13 @@ public class RisingPillar : MonoBehaviour
     public float moveSpeed = 10f;
 
     [Header("Cinemachine Shake Settings")]
-    [Tooltip("Drag your PlayerCam here.")]
     public CinemachineCamera cinemachineCamera;
     public float shakeAmplitude = 2f;
     public float shakeFrequency = 2f;
+
+    [Header("Audio Settings")]
+    [Tooltip("Drag your AudioSource here, or leave blank to auto-detect on this object.")]
+    public AudioSource rumbleAudioSource;
 
     private Vector3 startPosition;
     private Vector3 targetPosition;
@@ -31,6 +34,18 @@ public class RisingPillar : MonoBehaviour
             noiseComponent = cinemachineCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             SetShakeActive(false);
         }
+
+       
+        if (rumbleAudioSource == null)
+        {
+            rumbleAudioSource = GetComponent<AudioSource>();
+        }
+
+        if (rumbleAudioSource != null)
+        {
+            rumbleAudioSource.loop = true;
+            rumbleAudioSource.playOnAwake = false;
+        }
     }
 
     void Update()
@@ -44,7 +59,10 @@ public class RisingPillar : MonoBehaviour
                 transform.position = targetPosition;
                 hasRisen = true;
                 isRising = false;
+                
+                
                 SetShakeActive(false);
+                StopRumbleAudio();
             }
         }
     }
@@ -55,6 +73,7 @@ public class RisingPillar : MonoBehaviour
         {
             isRising = true;
             SetShakeActive(true);
+            StartRumbleAudio();
         }
     }
 
@@ -64,6 +83,22 @@ public class RisingPillar : MonoBehaviour
         {
             noiseComponent.AmplitudeGain = active ? shakeAmplitude : 0f;
             noiseComponent.FrequencyGain = active ? shakeFrequency : 0f;
+        }
+    }
+
+    void StartRumbleAudio()
+    {
+        if (rumbleAudioSource != null && !rumbleAudioSource.isPlaying)
+        {
+            rumbleAudioSource.Play();
+        }
+    }
+
+    void StopRumbleAudio()
+    {
+        if (rumbleAudioSource != null && rumbleAudioSource.isPlaying)
+        {
+            rumbleAudioSource.Stop();
         }
     }
 }
