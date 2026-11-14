@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.4339623, g: 0.123666555, b: 0.11258457, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.7075472, g: 0.18672726, b: 0.06341223, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.004
+  m_FogDensity: 0.003
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -289,7 +289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &142987250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -301,7 +301,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 72664bca14dea43c8b83c38a94e6e8e6, type: 3}
+  m_Resource: {fileID: 8300000, guid: 11c570e3fac84412c930052170215df3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.27
   m_Pitch: 1
@@ -309,7 +309,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 97
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -663,7 +663,7 @@ Transform:
   m_GameObject: {fileID: 248826485}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10130298, y: 0.11242502, z: -0.59828997, w: 0.78685933}
-  m_LocalPosition: {x: -73, y: -116, z: 414}
+  m_LocalPosition: {x: -79, y: -118, z: 414}
   m_LocalScale: {x: 170.34412, y: 12.5419, z: 1085.1136}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1958,7 +1958,7 @@ Transform:
   m_GameObject: {fileID: 958526365}
   serializedVersion: 2
   m_LocalRotation: {x: 0.09724514, y: 0.12118749, z: -0.78404266, w: 0.60094446}
-  m_LocalPosition: {x: 63, y: -115, z: 416}
+  m_LocalPosition: {x: 65, y: -116, z: 416}
   m_LocalScale: {x: 170.34412, y: 12.5419, z: 1085.1136}
   m_ConstrainProportionsScale: 0
   m_Children: []
