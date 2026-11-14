@@ -3,31 +3,33 @@ using UnityEngine;
 public class PlayerCheckpoint : MonoBehaviour
 {
 
-    public GameObject checkPoint;
-    Vector3 spawnPoint;
+   private Vector3 spawnPoint;
 
     void Start()
     {
+        
         spawnPoint = transform.position;
     }
 
-    public void OnTriggerEnter(Collider other) //acá pueden añadir otras cosas para respawnear por checkpoint si lo quieren usar
+
+    public void UpdateSpawnPoint(Vector3 newSpawnPosition)
     {
-        if (other.gameObject.CompareTag("CheckPoint"))
+        spawnPoint = newSpawnPosition;
+        Debug.Log("Checkpoint Updated! New spawn point set.");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.CompareTag("RespawnFall") || other.CompareTag("HellSoul") || other.CompareTag("RespawnWalls"))
         {
-            spawnPoint = checkPoint.transform.position;
+            RespawnPlayer();
         }
-        if (other.gameObject.CompareTag("RespawnFall"))
-        {
-            gameObject.transform.position = spawnPoint;
-        }
-        if (other.gameObject.CompareTag("HellSoul"))
-        {
-            gameObject.transform.position = spawnPoint;
-        }
-        if (other.gameObject.CompareTag("RespawnWalls"))
-        {
-            gameObject.transform.position = spawnPoint;
-        }
+    }
+
+    void RespawnPlayer()
+    {
+        transform.position = spawnPoint;
+        
     }
 }
