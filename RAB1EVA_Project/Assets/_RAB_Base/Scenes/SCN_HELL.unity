@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &126897806
 Transform:
   m_ObjectHideFlags: 0
@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &267554050
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,7 +3738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &612902309
 Transform:
   m_ObjectHideFlags: 0
@@ -3865,7 +3865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &628066057
 Transform:
   m_ObjectHideFlags: 0
@@ -4200,7 +4200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &753092712
 Transform:
   m_ObjectHideFlags: 0
@@ -5692,7 +5692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1047089457
 Transform:
   m_ObjectHideFlags: 0
@@ -5739,7 +5739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1108855434
 Transform:
   m_ObjectHideFlags: 0
@@ -5958,7 +5958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1190121294
 Transform:
   m_ObjectHideFlags: 0
@@ -6010,7 +6010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1200393714
 Transform:
   m_ObjectHideFlags: 0
@@ -6067,7 +6067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1257734551
 Transform:
   m_ObjectHideFlags: 0
@@ -6114,7 +6114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1281651037
 Transform:
   m_ObjectHideFlags: 0
@@ -6819,7 +6819,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7103,7 +7103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1489340731
 Transform:
   m_ObjectHideFlags: 0
@@ -7689,7 +7689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1574007112
 Transform:
   m_ObjectHideFlags: 0
@@ -7754,7 +7754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1594713997
 Transform:
   m_ObjectHideFlags: 0
@@ -7877,7 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1638377120
 Transform:
   m_ObjectHideFlags: 0
@@ -8420,7 +8420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &1798256898
 Transform:
   m_ObjectHideFlags: 0
@@ -9375,7 +9375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &2019237161
 Transform:
   m_ObjectHideFlags: 0
@@ -9422,7 +9422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EyeFollow
   eyeTarget: {fileID: 2124307325}
-  rotationSpeed: 30
+  rotationSpeed: 35
 --- !u!4 &2053169194
 Transform:
   m_ObjectHideFlags: 0

@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/SCN_LEVEL2.unity
     guid: 4debabc593e4fe4478c58eb4ed98ead7
   - enabled: 1
-    path: Assets/Scenes/SCN_LEVEL3.unity
-    guid: 097e281bb4600994c847babf9101dc67
+    path: Assets/_RAB_Base/Scenes/SCN_HELL.unity
+    guid: ea640e378ec6e3f4b81bfc1730053d13
   - enabled: 1
     path: Assets/Scenes/SCN_Victory.unity
     guid: f51d20dfdd0442e46a21f56d531772b0
