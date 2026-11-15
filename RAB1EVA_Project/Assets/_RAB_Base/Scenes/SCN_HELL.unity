@@ -1438,6 +1438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick-Up_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      propertyPath: m_TagString
+      value: SwitchPickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 1771790816835254241, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.832
@@ -1500,6 +1504,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 321410037}
+    - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 321410038}
   m_SourcePrefab: {fileID: 100100000, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
 --- !u!1 &321410029 stripped
 GameObject:
@@ -1618,6 +1625,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &321410038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321410029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1e10a66ce17ee4eaf6457355eac21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  speedX: 0
+  speedY: 0
+  speedZ: 15
 --- !u!1001 &324159197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2910,6 +2932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick-Up_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      propertyPath: m_TagString
+      value: SwitchPickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 1771790816835254241, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.832
@@ -2972,6 +2998,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 482685914}
+    - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 482685919}
   m_SourcePrefab: {fileID: 100100000, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
 --- !u!1 &482685908 stripped
 GameObject:
@@ -3090,6 +3119,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &482685919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482685908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1e10a66ce17ee4eaf6457355eac21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  speedX: 0
+  speedY: 0
+  speedZ: 15
 --- !u!1001 &486732209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3990,6 +4034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick-Up_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      propertyPath: m_TagString
+      value: SwitchPickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 1771790816835254241, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.832
@@ -4052,6 +4100,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 703960226}
+    - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 703960231}
   m_SourcePrefab: {fileID: 100100000, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
 --- !u!1 &703960220 stripped
 GameObject:
@@ -4170,6 +4221,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &703960231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703960220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1e10a66ce17ee4eaf6457355eac21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  speedX: 0
+  speedY: 0
+  speedZ: 15
 --- !u!1 &753092710
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,6 +5274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick-Up_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      propertyPath: m_TagString
+      value: SwitchPickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 1771790816835254241, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.832
@@ -5270,6 +5340,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1001933367}
+    - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1001933372}
   m_SourcePrefab: {fileID: 100100000, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
 --- !u!1 &1001933361 stripped
 GameObject:
@@ -5388,6 +5461,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1001933372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001933361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1e10a66ce17ee4eaf6457355eac21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  speedX: 0
+  speedY: 0
+  speedZ: 15
 --- !u!1 &1006159270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4811971637919665469, guid: c9f2aab1e9bf94b7d8c8a23cac229f1c, type: 3}
@@ -5578,7 +5666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1025858450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8156,6 +8244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick-Up_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      propertyPath: m_TagString
+      value: SwitchPickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 1771790816835254241, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.832
@@ -8218,6 +8310,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1782087000}
+    - targetCorrespondingSourceObject: {fileID: 1431435431399124315, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782087005}
   m_SourcePrefab: {fileID: 100100000, guid: ac02f21a29b3b4c14a63bf1a2e866dba, type: 3}
 --- !u!1 &1782086994 stripped
 GameObject:
@@ -8336,6 +8431,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1782087005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782086994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1e10a66ce17ee4eaf6457355eac21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  speedX: 0
+  speedY: 0
+  speedZ: 15
 --- !u!1001 &1785465072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10014,7 +10124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'points: 00/00'
+  m_text: 'souls: 0/0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5742a8a20910f41aff535008985886, type: 2}
   m_sharedMaterial: {fileID: 496052890602540340, guid: 1c5742a8a20910f41aff535008985886, type: 2}
@@ -10023,8 +10133,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283145191
-  m_fontColor: {r: 0.9056604, g: 0.6085187, b: 0.2947668, a: 1}
+    rgba: 4294963200
+  m_fontColor: {r: 0, g: 0.94305634, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10041,8 +10151,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10206,8 +10316,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2955268093276677981, guid: ad05bb52c848bd34798792368a48d415, type: 3}
+      propertyPath: points
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955268093276677981, guid: ad05bb52c848bd34798792368a48d415, type: 3}
       propertyPath: winPoints
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2955268093276677981, guid: ad05bb52c848bd34798792368a48d415, type: 3}
       propertyPath: respawnPoint

@@ -22,17 +22,20 @@ public class PillarSwitch : MonoBehaviour
         switchAudioSource = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (!isActivated && other.CompareTag("Player"))
         {
             isActivated = true;
 
-           
+           other.GetComponent<PlayerInteractor>().points += 1; 
+
             if (switchAudioSource != null)
             {
                 switchAudioSource.Play();
             }
+
+        
 
             
             if (targetPillar != null)
