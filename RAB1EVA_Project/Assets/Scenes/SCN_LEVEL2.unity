@@ -6515,7 +6515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NivelCompletado
   escenaSiguiente: SCN_HELL
-  pickUpsNecesarios: 1
+  pickUpsNecesarios: 14
 --- !u!4 &529786425
 Transform:
   m_ObjectHideFlags: 0
