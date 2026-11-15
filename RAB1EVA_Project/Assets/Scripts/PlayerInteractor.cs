@@ -33,7 +33,7 @@ public class PlayerInteractor : MonoBehaviour
         points = 0; //Cuando empieza la partida, los puntos se ponen solos en cero
         levelCompleted = false;
 
-        winPoints = GameObject.FindGameObjectsWithTag("PickUp").Length;
+       winPoints = GameObject.FindGameObjectsWithTag("SwitchPickUp").Length + GameObject.FindGameObjectsWithTag("PickUp").Length;
 
         if (playerRb == null )
         {
@@ -66,7 +66,7 @@ public class PlayerInteractor : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
 
         if (other.CompareTag("PickUp"))

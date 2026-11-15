@@ -11,6 +11,6 @@ public class PointsUpdater : MonoBehaviour
     {
         //Actualizar constantemente el valor de puntos
         //Points: points/winpoints
-        pointsText.text = "Points: " + playerIntScript.points.ToString() + "/" + playerIntScript.winPoints.ToString();
+        pointsText.text = "Souls: " + playerIntScript.points.ToString() + "/" + playerIntScript.winPoints.ToString();
     }
 }
