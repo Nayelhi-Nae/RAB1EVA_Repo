@@ -14,6 +14,7 @@ TagManager:
   - PickUp
   - HellSoul
   - HellTunnel
+  - Ghost-Enemy
   layers:
   - Default
   - TransparentFX
